@@ -89,3 +89,53 @@ form button:hover{
 .fa-trash{
     pointer-events: none;
 }
+
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: all 0.5s ease-in;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+select{ 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: #ff6f47;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+ 
+.select:hover::after{
+    background: white;
+    color: #ff6f47;
+} 
